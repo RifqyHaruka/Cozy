@@ -1,0 +1,14 @@
+Consume Api
+
+
+Buat kelas model yang isinya variable yang akan digunakan
+Buat constructor kelas
+Buat contructor from json (fungsi ini yang akan mengisi data variable yang telah di inisiasi dengan data yang ada pada json)
+Buat Provider nya jangan lupa import dan extends ke kelas change notifier
+buat fungsi asyncronus karena url akan di digunakan ketika aplikasi dibuka saja
+Parsing url dengan fungsi Uri.parse()
+buat variable untuk request lalu kenakan fungsi = Await http.get(url) melakukan request
+misal nama variable nya result, dan daatnya ada di result.body
+buat variable bertipe list untuk menampung hasil data yang didapatkn dari json lalu didecode, jangan lupa jsonDecode perlu import dart:convert
+setelah dijaadikan list, lalu dilkukan map jangan lupa tmbahkan .toList karena kita menambahkan nyua ke variable nomor 12 yaitu bertipe list
+return nilai mapnya
